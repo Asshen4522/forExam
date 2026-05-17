@@ -24,10 +24,16 @@ const isAnimating = ref(false)
 const curBilet = computed(() => dataBilets.findBilet(dataBilets.curBilet.value))
 </script>
 <template>
-    <div class="field" :class="{ disAnim: isAnimating }">
-        <div class="modal">
+    <div class="field">
+        <div class="modal" :class="{ disAnim: isAnimating }">
             <div>
-                {{ curBilet }}
+                <div v-if="curBilet.type == 1">Билет по общим функциям</div>
+                <div v-if="curBilet.type == 2">Билет по ванильному js</div>
+                <div v-if="curBilet.type == 3">Билет по vue js</div>
+                <div v-if="curBilet.type == 4">"Счастливый" билет</div>
+                <img v-if="curBilet.photo" :src="curBilet.photo" alt="Нема">
+                <div>{{ curBilet.text }}</div>
+
             </div>
             <div class="buttons">
                 <button @click="clearBilet(true)">Решено</button>

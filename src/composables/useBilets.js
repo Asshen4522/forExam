@@ -1,9 +1,12 @@
 import { ref } from "vue";
 
+import B2 from "../assets/B2.png"
+import B3 from "../assets/B3.png"
+
 const bilets = ref([
-  { id: 1, type: 1, photo: null, text: null, status: 1 },
-  { id: 2, type: 1, photo: null, text: null, status: 1 },
-  { id: 3, type: 1, photo: null, text: null, status: 1 },
+  { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
+  { id: 2, type: 1, photo: B2, text: "Что выведет в консоль?", status: 1 },
+  { id: 3, type: 1, photo: B3, text: "Что выведет в консоль?", status: 1 },
   { id: 4, type: 1, photo: null, text: null, status: 1 },
   { id: 5, type: 1, photo: null, text: null, status: 1 },
   { id: 6, type: 1, photo: null, text: null, status: 1 },
@@ -91,16 +94,16 @@ const bilets = ref([
   { id: 88, type: 1, photo: null, text: null, status: 1 },
   { id: 89, type: 1, photo: null, text: null, status: 1 },
   { id: 90, type: 1, photo: null, text: null, status: 1 },
-  { id: 91, type: 1, photo: null, text: null, status: 1 },
-  { id: 92, type: 1, photo: null, text: null, status: 1 },
-  { id: 93, type: 1, photo: null, text: null, status: 1 },
-  { id: 94, type: 1, photo: null, text: null, status: 1 },
-  { id: 95, type: 1, photo: null, text: null, status: 1 },
-  { id: 96, type: 1, photo: null, text: null, status: 1 },
-  { id: 97, type: 1, photo: null, text: null, status: 1 },
-  { id: 98, type: 1, photo: null, text: null, status: 1 },
-  { id: 99, type: 1, photo: null, text: null, status: 1 },
-  { id: 100, type: 1, photo: null, text: null, status: 1 },
+  { id: 91, type: 4, photo: null, text: "Какое полное название предмета по которому идёт название?", status: 1 },
+  { id: 92, type: 4, photo: null, text: "Назовите имя и фамилию старосты вашей группы", status: 1 },
+  { id: 93, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.01", status: 1 },
+  { id: 94, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.02", status: 1 },
+  { id: 95, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.03", status: 1 },
+  { id: 96, type: 4, photo: null, text: "Какое полное название предмета по которому идёт название?", status: 1 },
+  { id: 97, type: 4, photo: null, text: "Назовите имя и фамилию старосты вашей группы", status: 1 },
+  { id: 98, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.01", status: 1 },
+  { id: 99, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.02", status: 1 },
+  { id: 100, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.03", status: 1 },
 ])
 const curBilet=ref(0)
 
