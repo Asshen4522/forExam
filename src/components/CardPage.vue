@@ -26,15 +26,15 @@ const curBilet = computed(() => dataBilets.findBilet(dataBilets.curBilet.value))
 <template>
     <div class="field">
         <div class="modal" :class="{ disAnim: isAnimating }">
-            <div>
-                <div v-if="curBilet.type == 1">Билет по общим функциям</div>
-                <div v-if="curBilet.type == 2">Билет по ванильному js</div>
-                <div v-if="curBilet.type == 3">Билет по vue js</div>
-                <div v-if="curBilet.type == 4">"Счастливый" билет</div>
-                <img v-if="curBilet.photo" :src="curBilet.photo" alt="Нема">
-                <div>{{ curBilet.text }}</div>
 
-            </div>
+            <div v-if="curBilet.type == 1">Билет по общим функциям</div>
+            <div v-if="curBilet.type == 2">Билет по ванильному js</div>
+            <div v-if="curBilet.type == 3">Билет по vue js</div>
+            <div v-if="curBilet.type == 4">"Счастливый" билет</div>
+            <img v-if="curBilet.photo" :src="curBilet.photo" alt="Нема">
+            <div>{{ curBilet.text }}</div>
+
+
             <div class="buttons">
                 <button @click="clearBilet(true)">Решено</button>
                 <button @click="clearBilet(false)">Не решено</button>
@@ -60,13 +60,15 @@ const curBilet = computed(() => dataBilets.findBilet(dataBilets.curBilet.value))
 }
 
 .modal {
-    width: 50vw;
-    height: 50vh;
+    width: 70vw;
+    height: 70vh;
+    padding: 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
 
     border: 1px solid black;
     border-radius: 20px;

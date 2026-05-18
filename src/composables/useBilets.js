@@ -2,24 +2,35 @@ import { ref } from "vue";
 
 import B2 from "../assets/B2.png"
 import B3 from "../assets/B3.png"
+import B4 from "../assets/B4.png"
+import B5 from "../assets/B5.png"
+import B7 from "../assets/B7.png"
+import B8 from "../assets/B8.png"
+import B9 from "../assets/B9.png"
+import B10 from "../assets/B3.png"
+import B11 from "../assets/B4.png"
+import B12 from "../assets/B5.png"
+import B13 from "../assets/B7.png"
+import B14 from "../assets/B8.png"
+import B15 from "../assets/B9.png"
 
 const bilets = ref([
   { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
   { id: 2, type: 1, photo: B2, text: "Что выведет в консоль?", status: 1 },
   { id: 3, type: 1, photo: B3, text: "Что выведет в консоль?", status: 1 },
-  { id: 4, type: 1, photo: null, text: null, status: 1 },
-  { id: 5, type: 1, photo: null, text: null, status: 1 },
-  { id: 6, type: 1, photo: null, text: null, status: 1 },
-  { id: 7, type: 1, photo: null, text: null, status: 1 },
-  { id: 8, type: 1, photo: null, text: null, status: 1 },
-  { id: 9, type: 1, photo: null, text: null, status: 1 },
-  { id: 10, type: 1, photo: null, text: null, status: 1 },
-  { id: 11, type: 1, photo: null, text: null, status: 1 },
-  { id: 12, type: 1, photo: null, text: null, status: 1 },
-  { id: 13, type: 1, photo: null, text: null, status: 1 },
-  { id: 14, type: 1, photo: null, text: null, status: 1 },
-  { id: 15, type: 1, photo: null, text: null, status: 1 },
-  { id: 16, type: 1, photo: null, text: null, status: 1 },
+  { id: 4, type: 1, photo: B4, text: "Что выведет в консоль?", status: 1 },
+  { id: 5, type: 1, photo: B5, text: "Что выведет в консоль?", status: 1 },
+  { id: 6, type: 1, photo: null, text: "В чём отличия между let и const?", status: 1 },
+  { id: 7, type: 1, photo: B7, text: "Что выведет в консоль?", status: 1 },
+  { id: 8, type: 1, photo: B8, text: "Что выведет в консоль?", status: 1 },
+  { id: 9, type: 1, photo: B9, text: "Что выведет в консоль?", status: 1 },
+  { id: 10, type: 1, photo: B10, text: "Что выведет в консоль?", status: 1 },
+  { id: 11, type: 1, photo: B11, text: "Что выведет в консоль?", status: 1 },
+  { id: 12, type: 1, photo: B12, text: "Что выведет в консоль?", status: 1 },
+  { id: 13, type: 1, photo: B13, text: "Что выведет в консоль?", status: 1 },
+  { id: 14, type: 1, photo: B14, text: "Что выведет в консоль?", status: 1 },
+  { id: 15, type: 1, photo: B15, text: "Что выведет в консоль?", status: 1 },
+  { id: 16, type: 1, photo: null, text: "Какая разница между '=', '==' и '==='?", status: 1 },
   { id: 17, type: 1, photo: null, text: null, status: 1 },
   { id: 18, type: 1, photo: null, text: null, status: 1 },
   { id: 19, type: 1, photo: null, text: null, status: 1 },
