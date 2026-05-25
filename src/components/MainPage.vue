@@ -33,7 +33,31 @@ function randdoooom() {
 </script>
 <template>
     <div>
+
         <div class="cardField">
+            <div class="coordLine">
+                <div class="coordCard">0</div>
+                <div class="coordCard">1</div>
+                <div class="coordCard">2</div>
+                <div class="coordCard">3</div>
+                <div class="coordCard">4</div>
+                <div class="coordCard">5</div>
+                <div class="coordCard">6</div>
+                <div class="coordCard">7</div>
+                <div class="coordCard">8</div>
+                <div class="coordCard">9</div>
+                <div class="coordCard">10</div>
+            </div>
+            <div class="coordCard">А</div>
+            <div class="coordCard">Б</div>
+            <div class="coordCard">В</div>
+            <div class="coordCard">Г</div>
+            <div class="coordCard">Д</div>
+            <div class="coordCard">Е</div>
+            <div class="coordCard">Ж</div>
+            <div class="coordCard">З</div>
+            <div class="coordCard">И</div>
+            <div class="coordCard">К</div>
             <transition-group name="table">
                 <template v-for="bilet in dataBilets.bilets.value" :key="bilet.id">
                     <div class="card"
@@ -44,6 +68,7 @@ function randdoooom() {
             </transition-group>
 
         </div>
+
         <div>
             <button @click="randdoooom">Перемешать</button>
         </div>
@@ -54,13 +79,11 @@ function randdoooom() {
 <style scoped>
 .cardField {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    width: 790px;
-    height: 790px;
+    grid-template: repeat(11, 1fr)/repeat(11, 1fr);
+    gap: 10px;
+    /* width: 790px;
+    height: 790px; */
 }
-
-
 
 
 
@@ -79,6 +102,19 @@ function randdoooom() {
     color: white;
     user-select: none;
     animation: auto;
+}
+
+.coordCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.coordLine {
+    display: grid;
+    grid-row: 1/12;
+    grid-template-rows: repeat(11, 1fr);
 }
 
 .active {

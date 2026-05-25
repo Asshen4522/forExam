@@ -7,12 +7,17 @@ import B5 from "../assets/B5.png"
 import B7 from "../assets/B7.png"
 import B8 from "../assets/B8.png"
 import B9 from "../assets/B9.png"
-import B10 from "../assets/B3.png"
-import B11 from "../assets/B4.png"
-import B12 from "../assets/B5.png"
-import B13 from "../assets/B7.png"
-import B14 from "../assets/B8.png"
-import B15 from "../assets/B9.png"
+import B10 from "../assets/B10.png"
+import B11 from "../assets/B11.png"
+import B12 from "../assets/B12.png"
+import B13 from "../assets/B13.png"
+import B14 from "../assets/B14.png"
+import B15 from "../assets/B15.png"
+import B18 from "../assets/B18.png"
+import B19 from "../assets/B19.png"
+import B20 from "../assets/B20.png"
+import B21 from "../assets/B21.png"
+import B28 from "../assets/B28.png"
 
 const bilets = ref([
   { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
@@ -31,18 +36,18 @@ const bilets = ref([
   { id: 14, type: 1, photo: B14, text: "Что выведет в консоль?", status: 1 },
   { id: 15, type: 1, photo: B15, text: "Что выведет в консоль?", status: 1 },
   { id: 16, type: 1, photo: null, text: "Какая разница между '=', '==' и '==='?", status: 1 },
-  { id: 17, type: 1, photo: null, text: null, status: 1 },
-  { id: 18, type: 1, photo: null, text: null, status: 1 },
-  { id: 19, type: 1, photo: null, text: null, status: 1 },
-  { id: 20, type: 1, photo: null, text: null, status: 1 },
-  { id: 21, type: 1, photo: null, text: null, status: 1 },
-  { id: 22, type: 1, photo: null, text: null, status: 1 },
-  { id: 23, type: 1, photo: null, text: null, status: 1 },
-  { id: 24, type: 1, photo: null, text: null, status: 1 },
-  { id: 25, type: 1, photo: null, text: null, status: 1 },
-  { id: 26, type: 1, photo: null, text: null, status: 1 },
-  { id: 27, type: 1, photo: null, text: null, status: 1 },
-  { id: 28, type: 1, photo: null, text: null, status: 1 },
+  { id: 17, type: 1, photo: null, text: "В чём ключевые отличия между for, while и foreach?", status: 1 },
+  { id: 18, type: 1, photo: B18, text: "Какое последнее значение выведется в консоль?", status: 1 },
+  { id: 19, type: 1, photo: B19, text: "Какое последнее значение выведется в консоль?", status: 1 },
+  { id: 20, type: 1, photo: B20, text: "Что выведет в консоль?", status: 1 },
+  { id: 21, type: 1, photo: B21, text: "Что выведет в консоль?", status: 1 },
+  { id: 22, type: 1, photo: null, text: "Какая команда сохраняет в localStorage данные?", status: 1 },
+  { id: 23, type: 1, photo: null, text: "Какая команда достаёт из localStorage данные?", status: 1 },
+  { id: 24, type: 1, photo: null, text: "Какая команда удаляет из localStorage все данные?", status: 1 },
+  { id: 25, type: 1, photo: null, text: "Какая команда удаляет из localStorage конкретные данные?", status: 1 },
+  { id: 26, type: 1, photo: null, text: "Какие два метода JSON необходимы для хранения и использования сложных типов данных в localStorage?", status: 1 },
+  { id: 27, type: 1, photo: null, text: "В чём измеряется время во временных функциях js?", status: 1 },
+  { id: 28, type: 1, photo: B28, text: "В каком порядке цифры окажутся в консоли?", status: 1 },
   { id: 29, type: 1, photo: null, text: null, status: 1 },
   { id: 30, type: 1, photo: null, text: null, status: 1 },
   { id: 31, type: 1, photo: null, text: null, status: 1 },
