@@ -18,6 +18,11 @@ import B19 from "../assets/B19.png"
 import B20 from "../assets/B20.png"
 import B21 from "../assets/B21.png"
 import B28 from "../assets/B28.png"
+import B31 from "../assets/B31.png"
+import B32 from "../assets/B32.png"
+import B33 from "../assets/B33.png"
+import B34 from "../assets/B34.png"
+import B35 from "../assets/B35.png"
 
 const bilets = ref([
   { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
@@ -48,16 +53,17 @@ const bilets = ref([
   { id: 26, type: 1, photo: null, text: "Какие два метода JSON необходимы для хранения и использования сложных типов данных в localStorage?", status: 1 },
   { id: 27, type: 1, photo: null, text: "В чём измеряется время во временных функциях js?", status: 1 },
   { id: 28, type: 1, photo: B28, text: "В каком порядке цифры окажутся в консоли?", status: 1 },
-  { id: 29, type: 1, photo: null, text: null, status: 1 },
-  { id: 30, type: 1, photo: null, text: null, status: 1 },
-  { id: 31, type: 1, photo: null, text: null, status: 1 },
-  { id: 32, type: 1, photo: null, text: null, status: 1 },
-  { id: 33, type: 1, photo: null, text: null, status: 1 },
-  { id: 34, type: 1, photo: null, text: null, status: 1 },
-  { id: 35, type: 1, photo: null, text: null, status: 1 },
-  { id: 36, type: 1, photo: null, text: null, status: 1 },
-  { id: 37, type: 1, photo: null, text: null, status: 1 },
-  { id: 38, type: 1, photo: null, text: null, status: 1 },
+  { id: 29, type: 1, photo: null, text: "Какой обязательный атрибут любого цикла?", status: 1 },
+  { id: 30, type: 1, photo: null, text: "Как остановить интервал или отложенное действие?", status: 1 },
+  { id: 31, type: 1, photo: B31, text: "Что выведет в консоль?", status: 1 },
+  { id: 32, type: 1, photo: B32, text: "Что выведет в консоль?", status: 1 },
+  { id: 33, type: 1, photo: B33, text: "Что выведет в консоль?", status: 1 },
+  { id: 34, type: 1, photo: B34, text: "Что выведет в консоль?", status: 1 },
+  { id: 35, type: 1, photo: B35, text: "Что выведет в консоль?", status: 1 },
+  { id: 36, type: 1, photo: null, text: "В чём отличие функций от методов?", status: 1 },
+
+  { id: 37, type: 2, photo: null, text: "К чему применяются методы поиска элементов на сайте?", status: 1 },
+  { id: 38, type: 2, photo: null, text: "Назовите один из методов поиска эементов на сайте", status: 1 },
   { id: 39, type: 1, photo: null, text: null, status: 1 },
   { id: 40, type: 1, photo: null, text: null, status: 1 },
   { id: 41, type: 1, photo: null, text: null, status: 1 },
