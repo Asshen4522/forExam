@@ -21,4 +21,5 @@ body {
 img {
   height: 70%;
   width: auto;
+  max-width: 100%;
 }

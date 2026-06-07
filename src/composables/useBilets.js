@@ -23,6 +23,15 @@ import B32 from "../assets/B32.png"
 import B33 from "../assets/B33.png"
 import B34 from "../assets/B34.png"
 import B35 from "../assets/B35.png"
+import B43 from "../assets/B43.png"
+import B44 from "../assets/B44.png"
+import B45 from "../assets/B45.png"
+import B46 from "../assets/B46.png"
+import B47 from "../assets/B47.png"
+import B48 from "../assets/B48.png"
+import B49 from "../assets/B49.png"
+import B50 from "../assets/B50.png"
+
 
 const bilets = ref([
   { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
@@ -62,25 +71,26 @@ const bilets = ref([
   { id: 35, type: 1, photo: B35, text: "Что выведет в консоль?", status: 1 },
   { id: 36, type: 1, photo: null, text: "В чём отличие функций от методов?", status: 1 },
 
-  { id: 37, type: 2, photo: null, text: "К чему применяются методы поиска элементов на сайте?", status: 1 },
-  { id: 38, type: 2, photo: null, text: "Назовите один из методов поиска эементов на сайте", status: 1 },
-  { id: 39, type: 1, photo: null, text: null, status: 1 },
-  { id: 40, type: 1, photo: null, text: null, status: 1 },
-  { id: 41, type: 1, photo: null, text: null, status: 1 },
-  { id: 42, type: 1, photo: null, text: null, status: 1 },
-  { id: 43, type: 1, photo: null, text: null, status: 1 },
-  { id: 44, type: 1, photo: null, text: null, status: 1 },
-  { id: 45, type: 1, photo: null, text: null, status: 1 },
-  { id: 46, type: 1, photo: null, text: null, status: 1 },
-  { id: 47, type: 1, photo: null, text: null, status: 1 },
-  { id: 48, type: 1, photo: null, text: null, status: 1 },
-  { id: 49, type: 1, photo: null, text: null, status: 1 },
-  { id: 50, type: 1, photo: null, text: null, status: 1 },
-  { id: 51, type: 1, photo: null, text: null, status: 1 },
-  { id: 52, type: 1, photo: null, text: null, status: 1 },
-  { id: 53, type: 1, photo: null, text: null, status: 1 },
-  { id: 54, type: 1, photo: null, text: null, status: 1 },
-  { id: 55, type: 1, photo: null, text: null, status: 1 },
+  { id: 37, type: 2, photo: null, text: "Когда мы пытаемся найти какой-то элемент на сайте мы сначала обращаемся к определенному обьекту, обозначающему весь сайт", status: 1 },
+  { id: 38, type: 2, photo: null, text: "Назовите один из методов поиска элементов на сайте", status: 1 },
+  { id: 39, type: 2, photo: null, text: "Как называется метод добавления обработчика событий?", status: 1 },
+  { id: 40, type: 2, photo: null, text: "Какие два ключевых элемента в любом обработчике событий?", status: 1 },
+  { id: 41, type: 2, photo: null, text: "Назовите свойство, отвечающее за значение элемента", status: 1 },
+  { id: 42, type: 2, photo: null, text: "Назовите одно из свойств, отвечающих за содержимое поля вывода", status: 1 },
+  { id: 43, type: 2, photo: B43, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 44, type: 2, photo: B44, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 45, type: 2, photo: B45, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 46, type: 2, photo: B46, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 47, type: 2, photo: B47, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 48, type: 2, photo: B48, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 49, type: 2, photo: B49, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 50, type: 2, photo: B50, text: "Найдите ошибку и назовите её", status: 1 },
+  { id: 51, type: 2, photo: null, text: "Как называется свойство элемента, отвечающее за его список классов? К нему мы обращаемся, когда хотим как-либо с ним поработать", status: 1 },
+  { id: 52, type: 2, photo: null, text: "Назовите метод добавления класса в список классов", status: 1 },
+  { id: 53, type: 2, photo: null, text: "Назовите метод удаления класса из списка классов", status: 1 },
+  { id: 54, type: 2, photo: null, text: "Назовите метод переключения класса. Он добавляет класс, если его нет и удаляет, если он есть", status: 1 },
+  { id: 55, type: 2, photo: null, text: "С помощью чего мы можем гибко изменять конкретное свойство стиля элемента?", status: 1 },
+
   { id: 56, type: 1, photo: null, text: null, status: 1 },
   { id: 57, type: 1, photo: null, text: null, status: 1 },
   { id: 58, type: 1, photo: null, text: null, status: 1 },
@@ -116,12 +126,12 @@ const bilets = ref([
   { id: 88, type: 1, photo: null, text: null, status: 1 },
   { id: 89, type: 1, photo: null, text: null, status: 1 },
   { id: 90, type: 1, photo: null, text: null, status: 1 },
-  { id: 91, type: 4, photo: null, text: "Какое полное название предмета по которому идёт название?", status: 1 },
+  { id: 91, type: 4, photo: null, text: "Какое полное название предмета по которому идёт экзамен?", status: 1 },
   { id: 92, type: 4, photo: null, text: "Назовите имя и фамилию старосты вашей группы", status: 1 },
   { id: 93, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.01", status: 1 },
   { id: 94, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.02", status: 1 },
   { id: 95, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.03", status: 1 },
-  { id: 96, type: 4, photo: null, text: "Какое полное название предмета по которому идёт название?", status: 1 },
+  { id: 96, type: 4, photo: null, text: "Какое полное название предмета по которому идёт экзамен?", status: 1 },
   { id: 97, type: 4, photo: null, text: "Назовите имя и фамилию старосты вашей группы", status: 1 },
   { id: 98, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.01", status: 1 },
   { id: 99, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.02", status: 1 },
