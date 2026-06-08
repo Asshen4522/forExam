@@ -31,6 +31,7 @@ import B47 from "../assets/B47.png"
 import B48 from "../assets/B48.png"
 import B49 from "../assets/B49.png"
 import B50 from "../assets/B50.png"
+import B66 from "../assets/B66.png"
 
 
 const bilets = ref([
@@ -89,19 +90,19 @@ const bilets = ref([
   { id: 52, type: 2, photo: null, text: "Назовите метод добавления класса в список классов", status: 1 },
   { id: 53, type: 2, photo: null, text: "Назовите метод удаления класса из списка классов", status: 1 },
   { id: 54, type: 2, photo: null, text: "Назовите метод переключения класса. Он добавляет класс, если его нет и удаляет, если он есть", status: 1 },
-  { id: 55, type: 2, photo: null, text: "С помощью чего мы можем гибко изменять конкретное свойство стиля элемента?", status: 1 },
+  { id: 55, type: 2, photo: null, text: "С помощью чего мы можем гибко изменять конкретное свойство стиля элемента? Например - записывать координаты или менять цвет на один из заданных", status: 1 },
 
-  { id: 56, type: 1, photo: null, text: null, status: 1 },
-  { id: 57, type: 1, photo: null, text: null, status: 1 },
-  { id: 58, type: 1, photo: null, text: null, status: 1 },
-  { id: 59, type: 1, photo: null, text: null, status: 1 },
-  { id: 60, type: 1, photo: null, text: null, status: 1 },
-  { id: 61, type: 1, photo: null, text: null, status: 1 },
-  { id: 62, type: 1, photo: null, text: null, status: 1 },
-  { id: 63, type: 1, photo: null, text: null, status: 1 },
-  { id: 64, type: 1, photo: null, text: null, status: 1 },
-  { id: 65, type: 1, photo: null, text: null, status: 1 },
-  { id: 66, type: 1, photo: null, text: null, status: 1 },
+  { id: 56, type: 3, photo: null, text: "Какой вид реактивных переменных используется для одного значения?", status: 1 },
+  { id: 57, type: 3, photo: null, text: "Какой вид реактивных переменных используется для группы вложенных переменных со своими значениями?", status: 1 },
+  { id: 58, type: 3, photo: null, text: "Какой вид реактивных переменных высчитывается на основе кода внутри него и возвращает значение?", status: 1 },
+  { id: 59, type: 3, photo: null, text: "При каком условии происходит перерасчёт высчитываемой переменной?", status: 1 },
+  { id: 60, type: 3, photo: null, text: "Для создания любой реактивной переменной что необходимо сделать?", status: 1 },
+  { id: 61, type: 3, photo: null, text: "Как в скрипте обращаться к ref переменным?", status: 1 },
+  { id: 62, type: 3, photo: null, text: "Как в скрипте обращаться к reactive переменным?", status: 1 },
+  { id: 63, type: 3, photo: null, text: "Как вывести любое скриптовое значение в разметку?", status: 1 },
+  { id: 64, type: 3, photo: null, text: "Как называется атрибут, начинающийся с 'v-'?", status: 1 },
+  { id: 65, type: 3, photo: null, text: "Как получить значение поля ввода?", status: 1 },
+  { id: 66, type: 3, photo: B66, text: "Что окажется в поле ввода?", status: 1 },
   { id: 67, type: 1, photo: null, text: null, status: 1 },
   { id: 68, type: 1, photo: null, text: null, status: 1 },
   { id: 69, type: 1, photo: null, text: null, status: 1 },
