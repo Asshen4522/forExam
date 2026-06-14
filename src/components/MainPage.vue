@@ -41,9 +41,9 @@ function randdoooom() {
                         Сложность
                     </div>
                     <select @change="dataBilets.pickDif($event.target.value)">
-                        <option :value="50">Низкая</option>
-                        <option :value="40" selected>Средняя</option>
-                        <option :value="30">Высокая</option>
+                        <option :value="50">Низкая - 50с</option>
+                        <option :value="40" selected>Средняя - 40с</option>
+                        <option :value="30">Высокая - 30с</option>
                     </select>
                 </div>
                 <div class="coordCard">1</div>
