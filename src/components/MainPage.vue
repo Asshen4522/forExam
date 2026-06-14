@@ -36,7 +36,16 @@ function randdoooom() {
 
         <div class="cardField">
             <div class="coordLine">
-                <div class="coordCard">0</div>
+                <div class="coordCard">
+                    <div>
+                        Сложность
+                    </div>
+                    <select @change="dataBilets.pickDif($event.target.value)">
+                        <option :value="50">Низкая</option>
+                        <option :value="40" selected>Средняя</option>
+                        <option :value="30">Высокая</option>
+                    </select>
+                </div>
                 <div class="coordCard">1</div>
                 <div class="coordCard">2</div>
                 <div class="coordCard">3</div>
@@ -108,6 +117,7 @@ function randdoooom() {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 

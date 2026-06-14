@@ -1,40 +1,41 @@
 <script setup>
-import { computed, ref } from 'vue';
+import { computed, onUnmounted, ref } from 'vue';
 import useBilets from '../composables/useBilets';
 const dataBilets = useBilets()
 
+const startTime = ref(`${dataBilets.curDif.value}s`)
 
 
 const emit = defineEmits(['clearBilet'])
 
 function clearBilet(result) {
-
-
     isAnimating.value = true
     setTimeout(() => {
         dataBilets.unSelectBilet(result)
         emit('clearBilet')
         isAnimating.value = false
     }, 1000)
-
 }
 
 const isAnimating = ref(false)
-
 const curBilet = computed(() => dataBilets.findBilet(dataBilets.curBilet.value))
 </script>
 <template>
     <div class="field">
         <div class="modal" :class="{ disAnim: isAnimating }">
-
             <div v-if="curBilet.type == 1">Билет по общим функциям</div>
             <div v-if="curBilet.type == 2">Билет по ванильному js</div>
             <div v-if="curBilet.type == 3">Билет по vue js</div>
             <div v-if="curBilet.type == 4">"Счастливый" билет</div>
             <img v-if="curBilet.photo" :src="curBilet.photo" alt="Нема">
             <div>{{ curBilet.text }}</div>
+            <div class="timer">
+                <div class="timeField">
+                    <div class="actualTime">
 
-
+                    </div>
+                </div>
+            </div>
             <div class="buttons">
                 <button @click="clearBilet(true)">Решено</button>
                 <button @click="clearBilet(false)">Не решено</button>
@@ -84,6 +85,32 @@ const curBilet = computed(() => dataBilets.findBilet(dataBilets.curBilet.value))
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.timer {
+    width: 100%;
+    margin: 10px;
+}
+
+.timeField {
+    height: 10px;
+    border: 1px solid black;
+}
+
+.actualTime {
+    height: 10px;
+    background-color: green;
+    animation: timerAnim v-bind(startTime) forwards;
+}
+
+@keyframes timerAnim {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
 }
 
 @keyframes appear {

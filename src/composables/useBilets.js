@@ -35,7 +35,7 @@ import B66 from "../assets/B66.png"
 
 
 const bilets = ref([
-  { id: 1, type: 1, photo: null, text: "Каким тегом подключается скрипт в html файлы?", status: 1 },
+  { id: 1, type: 1, photo: null, text: "Каким тегом подключается js в html файлы?", status: 1 },
   { id: 2, type: 1, photo: B2, text: "Что выведет в консоль?", status: 1 },
   { id: 3, type: 1, photo: B3, text: "Что выведет в консоль?", status: 1 },
   { id: 4, type: 1, photo: B4, text: "Что выведет в консоль?", status: 1 },
@@ -139,6 +139,7 @@ const bilets = ref([
   { id: 100, type: 4, photo: null, text: "Назовите ФИО преподавателя МДК 05.03", status: 1 },
 ])
 const curBilet=ref(0)
+const curDif=ref(40)
 
 function selectBilet(biletId) {
     const selectedBilet = findBilet(biletId)
@@ -173,6 +174,11 @@ function randomizeBilets() {
     }   
 }
 
+function pickDif(timeAmount) {
+    curDif.value=timeAmount
+}
+
+
 export default function useBilets() {
-    return {bilets,curBilet,selectBilet,findBilet,unSelectBilet,randomizeBilets}
+    return {bilets,curBilet,curDif,selectBilet,findBilet,unSelectBilet,randomizeBilets,pickDif}
 }
